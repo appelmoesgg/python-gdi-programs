@@ -169,6 +169,8 @@ lpppoint = ((left - 50, top + 50), (right - 50, top - 50), (left + 50, bottom + 
 
 
 while True:
+    if keyboard.is_pressed("ctrl+shift+i"): #stop function
+        break
 
     hdc = win32gui.GetDC(0)
     mhdc = CreateCompatibleDC(hdc)
